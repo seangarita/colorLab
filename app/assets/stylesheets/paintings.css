@@ -1,0 +1,39 @@
+body {
+	font-family: Courier;
+}
+
+h1 {
+	font-size: 72px;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+.painting img {
+	display: block;
+	width: 100%;
+	max-width: 500px;
+	margin: auto;
+	background-color: #f0f0f0;
+	-webkit-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.15);
+}
+
+.painting h3 {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#new-painting {
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#notice {
+	text-align:center;
+	margin-bottom: 25px;
+	color: red;
+}

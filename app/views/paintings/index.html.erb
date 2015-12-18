@@ -1,0 +1,16 @@
+<div class="grid-container">
+  <h1 class="grid-100">Colorlab</h1>
+  <div class="grid-100">
+    <p id="notice"><%= notice %></p>
+  </div>
+  <% @paintings.each do |painting| %>
+    <div class="painting grid-50">
+      <%= image_tag(painting.s3ThumbnailUrl, class: "painting-image") %>
+      <h3><%= link_to painting.name, painting.s3Url %> (<%= link_to "burn",  painting, :method => :delete %>)</h3>
+    </div>
+  <% end %>
+  
+  <div class="grid-100">
+    <%= link_to 'New Painting', new_painting_path, id:"new-painting" %>
+   </div>
+</div>
